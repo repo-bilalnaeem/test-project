@@ -1,0 +1,123 @@
+.checkbox_container {
+  border-radius: 6px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px rgba(20, 20, 20, 0.1),
+    0px 8px 15px 0px rgba(20, 20, 20, 0.12);
+  display: flex;
+  padding: 10px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 370px;
+  /* height: 320px; */
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox_header {
+  display: flex;
+  width: 370px;
+  height: 42px;
+  padding: 8px 15px 8px 22px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.checkbox_item {
+  display: flex;
+  width: 370px;
+  height: 42px;
+  padding: 8px 15px 8px 22px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.done_button {
+  cursor: pointer;
+  border: none;
+
+  border-radius: 4px;
+  background: #ffce22;
+
+  display: flex;
+  width: 340px;
+  height: 40px;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  color: #1f2128;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  margin: 10px 15px;
+}
+
+.done_button:hover {
+  background: #e6b800;
+}
+
+.checkbox {
+  appearance: none;
+  width: 23px;
+  height: 23px;
+  border: 1px solid rgba(205, 205, 205, 0.6);
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+/* When checked */
+.checkbox:checked {
+  background-color: #007aff;
+  border-color: #007aff;
+}
+
+.checkbox:checked::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  width: 17px;
+  height: 13px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='17' height='13' viewBox='0 0 17 13' fill='none'><path d='M0.679993 6.592L6.22878 11.5272C6.24925 11.5454 6.28054 11.5437 6.29898 11.5235L16.32 0.520004' stroke='white' stroke-linecap='round'/></svg>");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Hovering over the item will make the checkbox look checked */
+.checkbox_item:hover .checkbox:not(:checked) {
+  background-color: #007aff;
+  border-color: #007aff;
+}
+
+.checkbox_item:hover .checkbox:not(:checked)::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  width: 17px;
+  height: 13px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='17' height='13' viewBox='0 0 17 13' fill='none'><path d='M0.679993 6.592L6.22878 11.5272C6.24925 11.5454 6.28054 11.5437 6.29898 11.5235L16.32 0.520004' stroke='white' stroke-linecap='round'/></svg>");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.separator {
+  width: 340px;
+  border: 0.7px solid #CDCDCD;
+  margin: 10px 0 10px 0;
+  padding: 0 15px 0 15px;
+}
+
+
+  
